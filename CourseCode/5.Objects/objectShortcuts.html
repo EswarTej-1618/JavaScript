@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ObjectShortcuts</title>
+</head>
+<body>
+    
+ <script>
+    let product={
+    company :'Ramraj',
+    itemName:'Cotton Stripped Dhothi',
+    price:999,
+    displayPrice:function(){
+        return `$${this.price.toFixed(2)}`;
+    }
+    };
+    // destructuring
+    // let company=product.company;
+    // console.log(company);
+    // same as
+   let {company,price}=product;
+   console.log(company);
+   console.log(price);
+
+//    shortcut 2 for method  
+let product2={
+    company :'Ramraj',
+    itemName:'Cotton Stripped Dhothi',
+    price:999,
+    // both of the defining are same
+    displayPrice(){
+        return `$${this.price.toFixed(2)}`;
+    }
+    };
+ </script>   
+</body>
+</html>

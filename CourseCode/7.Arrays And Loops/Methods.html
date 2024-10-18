@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Methods Array</title>
+</head>
+<body>
+     <script>
+        let arr=[1,2,3,34,5,6,6,77,8,6,6,5,4,5556,785];
+        console.log(arr);
+        arr.push(123);//adds an new element at last
+        console.log(arr);
+        // pop removes the last element !! this can also return the value
+       console.log('First removed: ',arr.pop());//123 gone
+        console.log(arr);
+        let popped=arr.pop();//785 gone and returned
+        console.log(arr);
+        console.log('Removed and returned element: ',popped);
+        console.log('Another one Removed ',arr.pop());
+        console.log(arr);
+        // shift and unshift also does the same thing  shift delets elements from first and unshift adds element from first!!
+        console.log('Using Shift and Unshift: ');
+        arr.shift();// 1 is deleted!
+        console.log(arr);
+        arr.unshift(101);//101 added from starting!
+        console.log(arr);
+
+
+
+     </script>
+</body>
+</html>

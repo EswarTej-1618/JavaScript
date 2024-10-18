@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>PracticeSet-07</title>
+</head>
+<body>
+
+    <script>
+        // question 1
+      let arr=[5,6];
+      arr.push(7);
+      arr.unshift(4);
+      console.log(arr);
+
+    //   question 2
+     function getElements(Arr,position) {
+        return Arr[position-1];
+     }
+     let Arr=[1,2,3,4,5,6,7,8,9];
+     console.log(getElements(Arr,1));
+
+    //  question 3 slice method printing...
+    function arrCopy(arr){
+        return arr.slice(0,arr.length);
+    }
+    let nums=[1,2,3,45,67,788,90];
+    console.log(arrCopy(nums));
+
+//    Q4 Prime numbers
+   function isPrime(num) {
+    for (let i = 2; i <num; i++) {
+      if (num%i === 0) {
+        return false;
+      }
+    }
+     return true;
+   }
+   console.log(isPrime(5));
+   console.log(isPrime(35));
+   console.log(isPrime(11));
+   console.log("Prime num code that exits after 5 num: ");
+//   exits after  5 prime Nums 
+   let a=2; 
+   let i=0;
+   while (true){
+    if (isPrime(a)){
+        console.log(a);
+        i++;
+        if (i>=5) {
+            break;
+        }
+    }
+    a++;
+   }
+//   Q6 nums in Reverse order
+    console.log(`Printing Nums in Reverse Order: `);
+    for (let  i = 10;  i>0;  i--) {
+       console.log(i);  
+    }
+
+    //Q7 
+    console.log(`Printing Only Positive in the array : `);
+    let numbers=[1,-6,5,7,-98]; 
+     for (let i = 0; i<numbers.length; i++) {
+        if (numbers[i]<0) {
+            continue;
+        }
+        console.log(numbers[i]);
+        
+     }
+    //  Q8 string Concatenation!
+    console.log(`String Concatenation`);
+    let  truth =['KG','Coding','JavaScript','Course','is','Best!'];
+    let result='';
+    for (let i = 0; i < truth.length; i++) {
+      result+=truth[i]+' '; 
+    }
+    console.log(result);
+
+    console.log('Another Method to concatenate ');
+    // joined by " " space... 
+    console.log(truth.join(" "));
+    // joined by , ....
+    console.log(truth.join(","));
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>SetInterval</title>
+</head>
+<body style="background-color: black;">
+ <script>
+        
+   console.log("Set Interval!");
+   let newAlaram=() =>console.log(`Wake Up iTs High Time ${new Date()}`);
+   let IntervalId =  setInterval(newAlaram,1000);//here these are millisecs!
+
+   //    clearing  after Secs! enjoy
+   setTimeout(()=>clearInterval(IntervalId),10000);
+ </script>
+</body>
+</html>

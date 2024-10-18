@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EventListener</title>
+</head>
+<body style="background-color: black;">
+  <button id="my-Button";">Click Me</button>
+  <script>
+    let buttonElement =document.querySelector('#my-Button');
+    let behaviour =event=>console.log(`Iam Clicked!`);
+  // we can add multiple event listeners for 1 id or class  both of tehm will exicute
+    buttonElement.addEventListener('click',behaviour);
+    let printDate=event=>console.log(new Date);
+    buttonElement.addEventListener('click',printDate);
+  
+    // removing event listenres!
+    buttonElement.removeEventListener('click',behaviour);
+    // see other event listeners in mdn document we have so many
+  
+  </script>  
+</body>
+</html>

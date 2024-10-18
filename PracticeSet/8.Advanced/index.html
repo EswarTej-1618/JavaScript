@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 1</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .btn-subscribe{
+            font-size: 15px;
+            height:50px;
+            width: 100px;
+            background-color: rgb(236, 17, 17);
+            font-weight: 700;
+            color:white;
+            border-radius: 15px;
+            cursor: pointer;
+            border-color: white;
+        }
+        .js-size-dobule{
+            font-size: 30px;  
+            height:100px;
+            width: 200px;
+            font-weight: 700;
+            border-radius: 1.25em;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-subscribe">Subscribe</button>
+
+
+    <script>
+        // question1
+        let multiply=(num1,num2)=>num1*num2;
+        console.log(multiply(4,5));
+
+        // question 2
+        console.log(`\n Question 2`);
+        let printGreet=()=>console.log('Namaskaram!');
+        let runTwice=inputFunction=>{
+            inputFunction();
+            inputFunction();
+        };
+
+        runTwice(printGreet);
+
+         //    question 3 & 4
+         console.log(`\n Question 3 and 4: `);
+         let buttonElement = document.querySelector('.btn-subscribe');
+         buttonElement.addEventListener('click',event=>setTimeout(dobuleTheSize, 2000)
+         )
+
+         function dobuleTheSize(){
+            let buttonElement = document.querySelector('.btn-subscribe');
+            buttonElement.classList.add('js-size-dobule');
+         }
+
+        // question 5
+        console.log(`\n Question 5: `);
+        let arr=[1,2,3,4,5,6,7,8,9,10];
+        let sum=0;
+       
+        arr.forEach(num =>sum+=num);
+        console.log(sum);
+       let squares =arr.map(num=>num*num);
+       console.log(`The array is ${arr}\n The squares of the same array is: ${squares}`);
+       
+       console.log(`\n Done With The Exercise!`);
+    </script>
+</body>
+</html>

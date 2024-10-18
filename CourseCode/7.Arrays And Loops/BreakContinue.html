@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en ">
+<head>
+   <link rel="stylesheet" href="index.css">
+    <title>Break&Continue</title>
+</head>
+<body>
+    <script>
+        let numArr=[];
+        for (let i = 0; i < 50; i++){
+           numArr.push(i);
+            if (i==40) {
+
+                break;//breaks the loop and exit from here
+            }
+        }
+        console.log(`The array printed :[${numArr}]`);
+
+    //   Search in Array
+        let arr=[1,2,3,4,5,67,8,90,12];
+        console.log('New array to Find 67 :',arr);
+        for (let i = 0; i <arr.length; i++){
+           if (arr[i]==67) {
+             console.log(`Number Found at index: ${i}`);
+             break;
+           }
+           console.log('Looking for the Number 67 ');
+        }
+     
+
+
+        // continue Statement
+        let newArr=[];
+        for (let i = 0; i < 50; i++){
+           newArr.push(i); 
+            if (i==40) {
+                continue;
+                // from here rest of the statements dont excute and go back the condition hello world print....
+                console.log('Hello world');
+            }
+        }
+        console.log(`The array printed :[${newArr}]`);
+    </script>
+</body>
+</html>

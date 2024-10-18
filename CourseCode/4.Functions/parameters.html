@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parametrs</title>
+</head>
+<body>
+
+<script>
+    // here a and b are the parameters 
+    function sum(a,b){
+        let sum=a+b;
+        return sum;
+       
+    }
+    //here 5 and 7 are the arguments! 
+    // functin call.......
+    let Sum=sum(5,7)
+    console.log('here the value is : '+Sum);
+    console.log(sum(44,90));
+    console.log(sum(904,75));
+    console.log(sum(45674,1088));
+    console.log(sum(12344,90860));
+    //nother function named greeting
+    // here these are name =pyaree is a default value that it is ... taken if no name is given by the user!
+    function greetings(name='pyaree'){
+        console.log(`namste ${name} `); 
+    } 
+    // function call
+    greetings('Amrutha');
+    greetings(); 
+
+   
+</script>
+</body>
+</html>

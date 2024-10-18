@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="index.css">
+    <title>Accumulator!</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,34,5667,867,5,53335,7];
+        console.log(`The Array : [${arr}]`);
+
+        // lets sum array
+        let sum=0;
+        //in the condition of arrays i means index which is a default shortCut only for arrays!
+        for (let i = 0; i < arr.length; i++) {
+            sum+=arr[i];
+        };
+        console.log(`Sum of the Elements in the Given array: ${sum}`);
+
+
+        // squares of the same Array!
+        let squares=[];
+        for (let i = 0; i < arr.length; i++){
+             squares.push(arr[i]*arr[i]);
+        }
+        console.log(`Squares of the Given Array : [${squares}]`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body{
+        background-color: black;
+    }
+   </style>
+    <title>for each Loop</title>
+</head>
+<body>
+    <script>
+        let arr=[12,3,4,5,6];
+        // for loop
+        for (let i = 0; i < arr.length; i++) {
+           console.log(arr[i]);     
+        }
+
+        // see the magic in forEach
+        arr.forEach(num=> console.log(num));
+        // both print the array but! we have the easiest one in for Each
+
+        function search(arr,num) {
+           for (let i = 0; i < arr.length; i++) {
+               if (arr[i]===num) {
+                return console.log(`Number is Present at index ${i}`);
+               }
+           } 
+           console.log("Element was not found");
+        }
+        console.log(`the lenght of the array is : ${arr.length}`);
+        search(arr,6);
+        search(arr,19);
+
+        // draw back of for Each in return statement time :11:55:01s
+        let Arr=[1,2,3,4,5,6,7,8,9];
+        Arr.forEach(num=>{
+            if (num==5) {
+              return;//just works like continue in the normal loops!   
+            } 
+         console.log(`Visited : ${num}`);
+        });
+    </script>
+</body>
+</html>

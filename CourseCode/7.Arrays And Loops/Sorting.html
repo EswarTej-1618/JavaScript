@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Sorting VVIMP</title>
+</head>
+<body>
+    <script>
+        let newArr=[23,789,632,'good Morning',0];
+        console.log('Before Sorting : ');
+        console.log(newArr);
+        // arranges in Asscending order! 
+        // we can use Sorting directly not like that we do loops in C or C++
+        newArr.sort();
+        console.log('After sorting: ');
+        console.log(newArr);
+    //see this makes a copy and print it!
+        console.log(newArr.valueOf()); 
+        // these arrays also just referneces!...
+        let Arr2=newArr;
+        Arr2[0]=99;
+        // even though change in Arr2 the changes will apperar in New Arr
+        console.log(newArr);
+    // destructreing
+    let [a,b,c,d]=newArr;
+    console.log(a+" "+b+" "+c+" "+d);
+
+    </script>
+    
+</body>
+</html>

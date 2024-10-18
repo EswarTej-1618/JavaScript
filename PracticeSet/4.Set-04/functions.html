@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Functions Practice Set</title>
+
+</head>
+<body>
+    
+</body>
+<script>
+    // function to check even or odd
+    function checkOdd(num){
+     let rem=num%2;
+     let odd = rem == 1;
+     return odd;
+    }
+   
+// function for largeer number!!
+    function larger(num1,num2){
+     if (num1>num2){
+        return num1;
+     } else{
+        return num2;
+     }
+    }
+    // ternary for simplecity of code
+    function lar(num1,num2){
+        return num1>num2? num1: num2;
+    }
+
+    // celsius to fahrenheit converesion
+    function toFah(celValue){
+      return 9/5*(celValue) +32;
+    }
+    
+    function toCel(fahVal){
+      return (fahVal-32)*5/9;
+    }
+    console.log('larger Numberes are:')
+    console.log(larger(5,89));
+    console.log(larger(545,90));
+    console.log(larger(34,720));
+    console.log(larger(78.99999999999999,79));
+    console.log(larger(100,100));
+    // using ternary fun
+    console.log('see the function ternary in the code..')
+    console.log(lar(5,9));
+
+    console.log(checkOdd(4));
+    console.log(checkOdd(3549));
+    console.log(checkOdd(107));
+    console.log(checkOdd(40));
+
+    console.log('From Cel to Fahrenheite');
+    console.log(toFah(37));
+    console.log('from Fahrenite to Celsius:');
+    console.log(toCel(98.6));
+
+</script>
+</html>

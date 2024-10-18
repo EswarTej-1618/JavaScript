@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Intro</title>
+</head>
+<body>
+
+
+<script>
+let product={
+   company:'Puma',
+   price:'670/-',
+   item_name:'T-shirt', 
+   'Manufauter-year':' FEB-2024',
+ };
+//  travessing through the object...!
+ console.log(product); 
+ console.log(product.company);
+ console.log(product.price);
+ console.log(product.item_name);
+//  changing the name of the company...
+ product.company='Adidas';
+ console.log(product.company); 
+ console.log(product); 
+//  we have an other way to acces the object but in thiscase it will pass as a string!
+console.log(product['company']);
+// now this type of call is usedul than that of the normal one 
+console.log(product['Manufauter-year']);
+let productName='company';
+console.log(product[productName]);
+
+// deleteing 
+console.log(product.company);
+delete product.company;  
+console.log('hello');
+console.log(product.company);
+
+</script>
+</body>
+</html>

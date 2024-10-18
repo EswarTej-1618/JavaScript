@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+      // JSON methods stringfy and prace...
+      let product={
+      company:"Ramraj",
+      name:"Dhoti",
+      price:1000,
+      rating:{
+        stars:4.9,
+        noOfReviews:3700,
+    
+      }};
+      console.log(typeof product);
+      console.log(product);
+    //   converting into a string....
+      let str=JSON.stringify(product);
+      console.log(typeof str);
+      console.log(str);
+
+      // converting to obj using Json
+      console.log('new Product :')
+      let newProduct=JSON.parse(str);
+      console.log(typeof newProduct);//object
+      console.log( newProduct);//object will print
+    </script>
+</body>
+</html>

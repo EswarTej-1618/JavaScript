@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Nested Objects!</title>
+</head>
+<body>
+    
+<script>
+   let product={
+     company:'Techno-Sport',
+     Price:999,
+     itemName:'T-shirt',
+    //  this is a method example that we can call a function without defining its name !
+     displayPrice:function(){
+      console.log(`Price of the product is ₹${product.Price}`);
+     }
+   };
+// calling method!
+   product.displayPrice();
+//    console.log();  here console is an object and log is a method ! that's we are using it every time is an example of object!
+// Math.random()
+</script>
+</body>
+</html>

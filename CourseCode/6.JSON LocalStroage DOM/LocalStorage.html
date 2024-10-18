@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+         let product={
+      company:"Ramraj",
+      name:"Dhoti",
+      price:1000,
+      rating:{
+        stars:4.9,
+        noOfReviews:3700,
+      }
+    };
+    // these items are being stored in the application itself .. in local storage set item means it will set the item in local storage
+    localStorage.setItem('Name','Teja');
+    localStorage.setItem('Occupation','Hacker');
+    localStorage.setItem('System','kali linux');
+    
+    // even though i commeted these items but they still stored in the browser.. so that i can call when i wanted to call them using getItem ....
+    console.log(localStorage.getItem('Name'));
+    console.log(localStorage.getItem('Occupation'));
+    console.log(localStorage.getItem('System'));
+
+    // storing an object using set item json method
+    localStorage.setItem('product',JSON.stringify(product));
+    console.log(localStorage.getItem('product'));
+
+    // now lets convert this into a object
+    let obj=JSON.parse(localStorage.getItem('product'));
+    console.log(obj);
+    // other methods in json
+    localStorage.removeItem('OCC');
+    localStorage.removeItem('');
+
+    // deleting all
+    // localStorage.clear();
+    // caution no sensistive information must be stored in this .... we need to just store normal values
+
+    </script>
+</body>
+</html>

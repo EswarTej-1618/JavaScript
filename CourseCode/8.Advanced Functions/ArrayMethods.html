@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Array Methods</title>
+</head>
+<body style="background-color: black;">
+    <script>
+        let arr=[1,2,3,4,5,6,7,8,9];
+        // methods 1.Filter
+        let odds=arr.filter((num,index)=>{
+            if (num%2===1) {
+                return true;
+            }else{
+                return false;
+            }
+        });
+        console.log(odds);
+
+
+    // smaller Version of the Function :)for the easier acess short Hand Notation ! time :12:01:00sec
+       let newOdds=arr.filter(
+        (num,index)=>num%2===1);
+
+        console.log("By Using Short Hand Notations:",newOdds);
+
+//  2.Maps
+    console.log("Actual Array ",arr);
+     let squares=arr.map(num=>num*num);
+     console.log("Its squares by using MAP: ",squares);
+
+    </script>
+</body>
+</html>

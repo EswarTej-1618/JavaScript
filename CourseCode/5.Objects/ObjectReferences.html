@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ObjectReference</title>
+</head>
+<body>
+
+
+ <script>
+ let a=5;
+ let b=5;
+ console.log(`a=${a} b=${b}`);
+ a=8;
+//  but here is as normal.... it just print normally ..
+ console.log(`a=${a} b=${b}`);
+ let x={num:5};
+ let y=x;
+//  x=5 y=5
+ console.log(`x=${x.num}, y=${y.num}`);
+ x.num=9;
+//  here x is only the refernce. x change its value in the object itself!....
+ console.log(`x=${x.num}, y=${y.num}`);
+//  x=9 y=9
+let p={pop:'iujh'};
+let q={pop:'iujh'};
+console.log(p==q);//false because the adress of memory is different
+console.log(p===q);//false because in object its no matter .. its always false. if we need to really comapre we need to compare each and every value is called deep equal 
+
+ </script>   
+</body>
+</html>
